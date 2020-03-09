@@ -1,0 +1,6 @@
+framework module Pods_NikeTestApp {
+  umbrella header "Pods-NikeTestApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

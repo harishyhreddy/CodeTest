@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EB61B2F3399040D8D6670C5 /* Pods_NikeTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7D354834F0103B2A037566 /* Pods_NikeTestApp.framework */; };
+		521199E32410CF2100E92FDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521199E22410CF2100E92FDE /* AppDelegate.swift */; };
+		521199E72410CF2100E92FDE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521199E62410CF2100E92FDE /* HomeViewController.swift */; };
+		521199EC2410CF2200E92FDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521199EB2410CF2200E92FDE /* Assets.xcassets */; };
+		521199EF2410CF2200E92FDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521199ED2410CF2200E92FDE /* LaunchScreen.storyboard */; };
+		521199FA2410CF2200E92FDE /* NikeTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521199F92410CF2200E92FDE /* NikeTestAppTests.swift */; };
+		5265B4D524113760002CC643 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265B4D424113760002CC643 /* MusicTableViewCell.swift */; };
+		5265B4DB2411399A002CC643 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265B4DA2411399A002CC643 /* Music.swift */; };
+		5265B4DE2411436E002CC643 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265B4DD2411436E002CC643 /* APIManager.swift */; };
+		5265B4E124114525002CC643 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265B4E024114525002CC643 /* UIViewController+Ext.swift */; };
+		5265B4E324114984002CC643 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265B4E224114984002CC643 /* Feed.swift */; };
+		5265B4E5241149B8002CC643 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265B4E4241149B8002CC643 /* Results.swift */; };
+		5265B4E724114B7F002CC643 /* Genere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265B4E624114B7F002CC643 /* Genere.swift */; };
+		5265B4E92412273A002CC643 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265B4E82412273A002CC643 /* DetailsViewController.swift */; };
+		52A1A71C241286ED00B5DC5D /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A1A71B241286ED00B5DC5D /* UIImageView+Ext.swift */; };
+		52A1A71E2412911F00B5DC5D /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A1A71D2412911F00B5DC5D /* CacheManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		521199F62410CF2200E92FDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 521199D72410CF2100E92FDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 521199DE2410CF2100E92FDE;
+			remoteInfo = NikeTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		521199DF2410CF2100E92FDE /* NikeTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NikeTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		521199E22410CF2100E92FDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		521199E62410CF2100E92FDE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		521199EB2410CF2200E92FDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		521199EE2410CF2200E92FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		521199F02410CF2200E92FDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		521199F52410CF2200E92FDE /* NikeTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NikeTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		521199F92410CF2200E92FDE /* NikeTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeTestAppTests.swift; sourceTree = "<group>"; };
+		521199FB2410CF2200E92FDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5265B4D424113760002CC643 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		5265B4DA2411399A002CC643 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		5265B4DD2411436E002CC643 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		5265B4E024114525002CC643 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		5265B4E224114984002CC643 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		5265B4E4241149B8002CC643 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		5265B4E624114B7F002CC643 /* Genere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genere.swift; sourceTree = "<group>"; };
+		5265B4E82412273A002CC643 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		52A1A71B241286ED00B5DC5D /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		52A1A71D2412911F00B5DC5D /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		75670B5ECDEE6790D1E84BA9 /* Pods-NikeTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NikeTestApp.release.xcconfig"; path = "Target Support Files/Pods-NikeTestApp/Pods-NikeTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		8DCFDF4625799EEF526D926F /* Pods-NikeTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NikeTestApp.debug.xcconfig"; path = "Target Support Files/Pods-NikeTestApp/Pods-NikeTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BA7D354834F0103B2A037566 /* Pods_NikeTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NikeTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		521199DC2410CF2100E92FDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EB61B2F3399040D8D6670C5 /* Pods_NikeTestApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		521199F22410CF2200E92FDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		521199D62410CF2100E92FDE = {
+			isa = PBXGroup;
+			children = (
+				521199E12410CF2100E92FDE /* NikeTestApp */,
+				521199EB2410CF2200E92FDE /* Assets.xcassets */,
+				521199ED2410CF2200E92FDE /* LaunchScreen.storyboard */,
+				521199F02410CF2200E92FDE /* Info.plist */,
+				521199F82410CF2200E92FDE /* NikeTestAppTests */,
+				521199E02410CF2100E92FDE /* Products */,
+				E2BD633F95F8DDB4769A95AD /* Pods */,
+				BF02BF1C8023F7C849FF9D0C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		521199E02410CF2100E92FDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				521199DF2410CF2100E92FDE /* NikeTestApp.app */,
+				521199F52410CF2200E92FDE /* NikeTestAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		521199E12410CF2100E92FDE /* NikeTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				521199E22410CF2100E92FDE /* AppDelegate.swift */,
+				5265B4DF24114517002CC643 /* Extensions */,
+				5265B4DC241142EF002CC643 /* WebServices */,
+				5265B4D924113988002CC643 /* Models */,
+				5265B4D624113767002CC643 /* Home */,
+				5265B4EA24122740002CC643 /* Details */,
+				52A1A71D2412911F00B5DC5D /* CacheManager.swift */,
+			);
+			path = NikeTestApp;
+			sourceTree = "<group>";
+		};
+		521199F82410CF2200E92FDE /* NikeTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				521199F92410CF2200E92FDE /* NikeTestAppTests.swift */,
+				521199FB2410CF2200E92FDE /* Info.plist */,
+			);
+			path = NikeTestAppTests;
+			sourceTree = "<group>";
+		};
+		5265B4D624113767002CC643 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				521199E62410CF2100E92FDE /* HomeViewController.swift */,
+				5265B4D424113760002CC643 /* MusicTableViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5265B4D924113988002CC643 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5265B4E224114984002CC643 /* Feed.swift */,
+				5265B4E4241149B8002CC643 /* Results.swift */,
+				5265B4DA2411399A002CC643 /* Music.swift */,
+				5265B4E624114B7F002CC643 /* Genere.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5265B4DC241142EF002CC643 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				5265B4DD2411436E002CC643 /* APIManager.swift */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		5265B4DF24114517002CC643 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5265B4E024114525002CC643 /* UIViewController+Ext.swift */,
+				52A1A71B241286ED00B5DC5D /* UIImageView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5265B4EA24122740002CC643 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				5265B4E82412273A002CC643 /* DetailsViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		BF02BF1C8023F7C849FF9D0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA7D354834F0103B2A037566 /* Pods_NikeTestApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2BD633F95F8DDB4769A95AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DCFDF4625799EEF526D926F /* Pods-NikeTestApp.debug.xcconfig */,
+				75670B5ECDEE6790D1E84BA9 /* Pods-NikeTestApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		521199DE2410CF2100E92FDE /* NikeTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 521199FE2410CF2200E92FDE /* Build configuration list for PBXNativeTarget "NikeTestApp" */;
+			buildPhases = (
+				9E0E1B41ABE084AE8F284C64 /* [CP] Check Pods Manifest.lock */,
+				521199DB2410CF2100E92FDE /* Sources */,
+				521199DC2410CF2100E92FDE /* Frameworks */,
+				521199DD2410CF2100E92FDE /* Resources */,
+				0ED2EC4AD22743D814DDE6D5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NikeTestApp;
+			productName = NikeTestApp;
+			productReference = 521199DF2410CF2100E92FDE /* NikeTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		521199F42410CF2200E92FDE /* NikeTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52119A012410CF2200E92FDE /* Build configuration list for PBXNativeTarget "NikeTestAppTests" */;
+			buildPhases = (
+				521199F12410CF2200E92FDE /* Sources */,
+				521199F22410CF2200E92FDE /* Frameworks */,
+				521199F32410CF2200E92FDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				521199F72410CF2200E92FDE /* PBXTargetDependency */,
+			);
+			name = NikeTestAppTests;
+			productName = NikeTestAppTests;
+			productReference = 521199F52410CF2200E92FDE /* NikeTestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		521199D72410CF2100E92FDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Harish;
+				TargetAttributes = {
+					521199DE2410CF2100E92FDE = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					521199F42410CF2200E92FDE = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 521199DE2410CF2100E92FDE;
+					};
+				};
+			};
+			buildConfigurationList = 521199DA2410CF2100E92FDE /* Build configuration list for PBXProject "NikeTestApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 521199D62410CF2100E92FDE;
+			productRefGroup = 521199E02410CF2100E92FDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				521199DE2410CF2100E92FDE /* NikeTestApp */,
+				521199F42410CF2200E92FDE /* NikeTestAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		521199DD2410CF2100E92FDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				521199EF2410CF2200E92FDE /* LaunchScreen.storyboard in Resources */,
+				521199EC2410CF2200E92FDE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		521199F32410CF2200E92FDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0ED2EC4AD22743D814DDE6D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NikeTestApp/Pods-NikeTestApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NikeTestApp/Pods-NikeTestApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NikeTestApp/Pods-NikeTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E0E1B41ABE084AE8F284C64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NikeTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		521199DB2410CF2100E92FDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5265B4DE2411436E002CC643 /* APIManager.swift in Sources */,
+				5265B4E724114B7F002CC643 /* Genere.swift in Sources */,
+				521199E72410CF2100E92FDE /* HomeViewController.swift in Sources */,
+				5265B4E124114525002CC643 /* UIViewController+Ext.swift in Sources */,
+				52A1A71E2412911F00B5DC5D /* CacheManager.swift in Sources */,
+				521199E32410CF2100E92FDE /* AppDelegate.swift in Sources */,
+				5265B4D524113760002CC643 /* MusicTableViewCell.swift in Sources */,
+				52A1A71C241286ED00B5DC5D /* UIImageView+Ext.swift in Sources */,
+				5265B4DB2411399A002CC643 /* Music.swift in Sources */,
+				5265B4E5241149B8002CC643 /* Results.swift in Sources */,
+				5265B4E324114984002CC643 /* Feed.swift in Sources */,
+				5265B4E92412273A002CC643 /* DetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		521199F12410CF2200E92FDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				521199FA2410CF2200E92FDE /* NikeTestAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		521199F72410CF2200E92FDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 521199DE2410CF2100E92FDE /* NikeTestApp */;
+			targetProxy = 521199F62410CF2200E92FDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		521199ED2410CF2200E92FDE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				521199EE2410CF2200E92FDE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		521199FC2410CF2200E92FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		521199FD2410CF2200E92FDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		521199FF2410CF2200E92FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DCFDF4625799EEF526D926F /* Pods-NikeTestApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BX7UW5F972;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.harish.NikeTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		52119A002410CF2200E92FDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75670B5ECDEE6790D1E84BA9 /* Pods-NikeTestApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BX7UW5F972;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.harish.NikeTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		52119A022410CF2200E92FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NikeTestAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.harish.NikeTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NikeTestApp.app/NikeTestApp";
+			};
+			name = Debug;
+		};
+		52119A032410CF2200E92FDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NikeTestAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.harish.NikeTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NikeTestApp.app/NikeTestApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		521199DA2410CF2100E92FDE /* Build configuration list for PBXProject "NikeTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				521199FC2410CF2200E92FDE /* Debug */,
+				521199FD2410CF2200E92FDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		521199FE2410CF2200E92FDE /* Build configuration list for PBXNativeTarget "NikeTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				521199FF2410CF2200E92FDE /* Debug */,
+				52119A002410CF2200E92FDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52119A012410CF2200E92FDE /* Build configuration list for PBXNativeTarget "NikeTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52119A022410CF2200E92FDE /* Debug */,
+				52119A032410CF2200E92FDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 521199D72410CF2100E92FDE /* Project object */;
+}
